@@ -49,9 +49,9 @@ nav .navbar-brand:hover{
     border-color: #fff;
   }
 
-  @media (min-width: 480px) and (max-width:1200px) {
+  @media (min-width: 200px) and (max-width:1200px) {
     .container .post {
-      width: 93%; 
+      width: 90%; 
     }
     nav .navbar-brand{
         font-size: 18px;
