@@ -5,12 +5,12 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         const postsContainer = document.getElementById('posts-container');
         posts.forEach(post => {
             const postElement = document.createElement('div');
-            postElement.classList.add('post','col-md-6','mb-4','border', 'border-secondary', 'rounded','pt-3');
+            postElement.classList.add('post','col-md-6','mb-4', 'rounded','pt-3');
             postElement.innerHTML = `
             <div class=" text-center">
                 <h3 class=" pb-3">${post.title}</h3>
                 <p class="text-secondary pb-3 fst-italic">${post.body}</p>
-                <button class="mb-4 btn btn-outline-info mx-auto" data-post-id="${post.id}">Fetch Comments</button>
+                <button class="mb-4 btn mx-auto" data-post-id="${post.id}">Fetch Comments</button>
                 <div class="comments" id="comments-${post.id}"></div>
             </div>
             `;
@@ -32,7 +32,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                                 commentElement.classList.add('comment','mb-5');
                                 commentElement.innerHTML = `
                                     <p><strong>${comment.name}</strong></p>
-                                    <p class="email text-info">${comment.email}</p>
+                                    <p class="email">${comment.email}</p>
                                     <p class="text-secondary">${comment.body}</p>
                                 `;
                                 commentsContainer.appendChild(commentElement);

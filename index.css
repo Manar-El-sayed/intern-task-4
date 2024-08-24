@@ -1,13 +1,16 @@
 /* style by css */
 body{
-    background: url(back.jpeg);
+    background: #000 !important;
 }
 .container .post{
     background-color: black;
     padding: 20px;
     margin-bottom: 40px;
     width: 49%;
-    box-shadow: 0 0 15px rgba(248, 246, 246, 0.4);
+    border: 2px solid #d198c9;
+
+    box-shadow: 0 0 15px rgba(207, 137, 191, 0.4);
+
 }
 #posts-container {
      display: flex;
@@ -16,8 +19,9 @@ body{
 
 } 
 .container h1{
-    color: rgb(19, 52, 76);
-    text-shadow: 5px 1px 2px rgba(176, 218, 231, 0.5);
+    /* color: rgb(146, 67, 126); */
+    color: #4d183f;
+    text-shadow: 3px 1px 2px rgba(220, 181, 208, 0.5);
 }
 .post:hover, .comment:hover {
     transform: translateY(-8px);
@@ -26,7 +30,7 @@ body{
     transition: all 0.35s ease-in-out;
   }
 nav .navbar-brand{
-    color: rgb(191, 223, 238);
+    color: rgb(238, 191, 236);
     font-size: 26px;  
     transition: all 0.3s ease-in-out;;
 }
@@ -35,8 +39,8 @@ nav .navbar-brand:hover{
     transform: translateX(8px);
 }
 .navbar{
-    background-color: rgb(5, 0, 0);
-    box-shadow: 0 0 15px rgba(156, 170, 196, 0.4);;
+    /* background-color: rgb(4, 4, 4); */
+    box-shadow: 0 0 12px rgba(193, 156, 196, 0.4);;
 }
 .text-center button{
     color: #ffffff;
@@ -44,9 +48,16 @@ nav .navbar-brand:hover{
     font-size: 16px; 
   }
 .text-center button:hover {
-    background-color: #11273a;
+    background-color: #3a112f;
     color: #ffffff;
     border-color: #fff;
+  }
+
+  .email{
+    color: #cf92bf;
+  }
+  .text-center button{
+    border: 2px solid #ca69bb; /* Change this color to whatever you like */
   }
 
   @media (max-width:1200px) {
